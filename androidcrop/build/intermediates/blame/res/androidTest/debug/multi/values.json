@@ -1,0 +1,172 @@
+[
+    {
+        "outputFile": "/home/priyank/AndroidStudioProjects/Synco/androidcrop/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values/values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 53,
+                    "endOffset": 104
+                },
+                "from": {
+                    "file": "/home/priyank/AndroidStudioProjects/Synco/androidcrop/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 53,
+                        "endOffset": 104
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 521,
+                    "endColumn": 44,
+                    "endOffset": 561
+                },
+                "from": {
+                    "file": "/home/priyank/AndroidStudioProjects/Synco/androidcrop/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 521,
+                        "endColumn": 44,
+                        "endOffset": 561
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 566,
+                    "endLine": 15,
+                    "endColumn": 12,
+                    "endOffset": 852
+                },
+                "from": {
+                    "file": "/home/priyank/AndroidStudioProjects/Synco/androidcrop/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 566,
+                        "endLine": 15,
+                        "endColumn": 12,
+                        "endOffset": 852
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 857,
+                    "endLine": 18,
+                    "endColumn": 12,
+                    "endOffset": 1012
+                },
+                "from": {
+                    "file": "/home/priyank/AndroidStudioProjects/Synco/androidcrop/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 857,
+                        "endLine": 18,
+                        "endColumn": 12,
+                        "endOffset": 1012
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "/home/priyank/AndroidStudioProjects/Appcollage/androidcrop/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values/values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 53,
+                    "endOffset": 104
+                },
+                "from": {
+                    "file": "/home/priyank/AndroidStudioProjects/Appcollage/androidcrop/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 53,
+                        "endOffset": 104
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 521,
+                    "endColumn": 44,
+                    "endOffset": 561
+                },
+                "from": {
+                    "file": "/home/priyank/AndroidStudioProjects/Appcollage/androidcrop/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 521,
+                        "endColumn": 44,
+                        "endOffset": 561
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 566,
+                    "endLine": 15,
+                    "endColumn": 12,
+                    "endOffset": 852
+                },
+                "from": {
+                    "file": "/home/priyank/AndroidStudioProjects/Appcollage/androidcrop/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 566,
+                        "endLine": 15,
+                        "endColumn": 12,
+                        "endOffset": 852
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 857,
+                    "endLine": 18,
+                    "endColumn": 12,
+                    "endOffset": 1012
+                },
+                "from": {
+                    "file": "/home/priyank/AndroidStudioProjects/Appcollage/androidcrop/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 857,
+                        "endLine": 18,
+                        "endColumn": 12,
+                        "endOffset": 1012
+                    }
+                }
+            }
+        ]
+    }
+]

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_action_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_30"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dp_10" >
+
+        <EditText
+            android:id="@+id/edt_create_group"
+            style="@style/edit"
+            android:hint="@string/enter_new_group_name_here"
+            android:maxLength="30" />
+
+        <Button
+            android:id="@+id/btn_add_group"
+            style="@style/btn_base"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="@string/add" />
+
+        <TextView
+            style="@style/txt_base"
+            android:layout_marginBottom="@dimen/dp_5"
+            android:layout_marginTop="@dimen/dp_25"
+            android:text="@string/your_current_groups"
+            android:textSize="@dimen/sp_12" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@drawable/outline" >
+
+            <TextView
+                android:id="@+id/txt_no_result_found"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                style="@style/txt_base"
+                android:gravity="center"
+                android:visibility="gone"
+                android:text="@string/no_result_found"
+                android:textSize="@dimen/sp_14"
+                 />
+
+            <ListView
+                android:id="@+id/list_current_created_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                android:padding="@dimen/dp_5" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

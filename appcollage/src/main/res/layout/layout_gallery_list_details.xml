@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:baselineAligned="false"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/dp_13"
+    android:paddingTop="@dimen/dp_13" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_26"
+        android:layout_marginRight="@dimen/dp_26"
+        android:layout_weight="1.0"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txt_gallery_group_name"
+            style="@style/txt_base"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:maxLines="3"
+            android:singleLine="false"
+            android:textSize="@dimen/sp_12" />
+
+        <com.appunison.appcollage.utils.AutoResizeTextView
+            android:id="@+id/txt_gallery_date"
+            style="@style/txt_base"
+            android:singleLine="true"
+            android:text="@string/date1"
+            android:textColor="@color/yellow"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/txt_gallery_time"
+            style="@style/txt_base"
+            android:background="@color/yellow"
+            android:padding="@dimen/dp_2"
+            android:singleLine="false"
+            android:text="@string/time"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp_14" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_gallery_list_collage"
+        style="@style/layout_home"
+        android:layout_width="@dimen/dp_75"
+        android:layout_height="@dimen/dp_75"
+        android:layout_marginRight="@dimen/dp_26"
+        android:padding="@dimen/dp_5" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:contentDescription="@null"
+            android:src="@drawable/collage" />
+
+        <TextView
+            style="@style/txt_home"
+            android:gravity="center"
+            android:singleLine="false"
+            android:text="@string/collage" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_gallery_list_photos"
+        style="@style/layout_home"
+        android:layout_width="@dimen/dp_75"
+        android:layout_height="@dimen/dp_75"
+        android:layout_marginRight="@dimen/dp_26"
+        android:padding="@dimen/dp_5" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:contentDescription="@null"
+            android:src="@drawable/photos" />
+
+        <TextView
+            style="@style/txt_home"
+            android:gravity="center"
+            android:singleLine="false"
+            android:text="@string/photos" />
+    </LinearLayout>
+
+</LinearLayout>

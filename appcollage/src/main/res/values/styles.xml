@@ -1,0 +1,85 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppBaseThemeNoTitleBar" parent="android:Theme.Light.NoTitleBar">
+        <item name="android:windowSoftInputMode">stateHidden</item>
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+    <style name="txt_base">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+        <style name="txt" parent="@style/txt_base">
+    </style>
+    <style name="edit">
+        <item name="android:textSize">@dimen/dp_14</item>
+        <item name="android:padding">@dimen/dp_8</item>
+        <item name="android:layout_marginBottom">@dimen/dp_10</item>
+        <item name="android:background">@drawable/outline</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLength">50</item>
+    </style>
+    
+    <style name="btn" parent="android:Widget.Button">
+        <item name="android:textSize">@dimen/dp_14</item>
+        <item name="android:padding">@dimen/dp_8</item>
+        <item name="android:layout_marginBottom">@dimen/dp_10</item>
+        <item name="android:background">@drawable/homeviewbg</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="btn_base">
+        <item name="android:layout_width">@dimen/dp_90</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/btn_listner_bg</item>
+        <item name="android:padding">@dimen/dp_8</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+    </style>
+  
+	<style name="txt_home">
+	    <item name="android:layout_width">wrap_content</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:textColor">@android:color/white</item>
+	    <item name="android:textSize">@dimen/sp_12</item>
+	      <item name="android:singleLine">true</item>
+	</style>
+	    
+    <style name="layout_home">
+        <item name="android:layout_height">@dimen/dp_86</item>
+        <item name="android:layout_width">@dimen/dp_86</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/dp_10</item>
+        <item name="android:background">@drawable/btn_listner_bg</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="layout_invite">
+        <item name="android:layout_height">@dimen/dp_70</item>
+        <item name="android:layout_width">@dimen/dp_70</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/dp_5</item>
+        <item name="android:background">@drawable/btn_listner_bg</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    
+</resources>

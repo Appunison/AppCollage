@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    android:orientation="vertical" >
+    <include 
+        layout="@layout/layout_action_bar"/>
+    <TextView 
+        style="@style/txt_base"
+        android:singleLine="false"
+        android:text="@string/sent_link_forget_msg"
+        android:layout_marginTop="@dimen/dp_50"
+        android:layout_marginBottom="@dimen/dp_25"
+        android:textSize="@dimen/sp_16"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"/>
+    <Button 
+        android:id="@+id/btn_sent_link_forget_ok"
+        style="@style/btn_base"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/ok"/>
+
+</LinearLayout>

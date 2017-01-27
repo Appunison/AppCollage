@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_new"
+    android:orientation="vertical" >
+    <include 
+        layout="@layout/layout_action_bar"/>
+    <Spinner
+        android:id="@+id/spinner_remove_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_25"
+        android:layout_marginRight="@dimen/dp_25"
+        android:layout_marginTop="@dimen/dp_25" 
+        android:layout_marginBottom="@dimen/dp_25" 
+        android:entries="@array/select_group"
+        android:spinnerMode="dropdown"/>
+    <TextView 
+    	style="@style/txt_base"
+    	android:singleLine="false"
+    	android:text="@string/remove_from_msg"
+    	android:textColor="@android:color/black"
+    	android:layout_gravity="center_horizontal"
+    	android:gravity="center"
+    	android:textSize="@dimen/sp_14"/>
+    <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_15"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_remove_from_group_cancel"
+                    style="@style/btn_base"
+                    android:layout_marginRight="@dimen/dp_15"
+                    android:text="@string/cancel" />
+
+                <Button
+                    android:id="@+id/btn_remove"
+                    style="@style/btn_base"
+                    android:text="@string/remove" />
+            </LinearLayout>
+</LinearLayout>

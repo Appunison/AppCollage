@@ -1,0 +1,8 @@
+<resources>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="app_text_size">@dimen/sp_13</dimen>
+    
+    
+</resources>

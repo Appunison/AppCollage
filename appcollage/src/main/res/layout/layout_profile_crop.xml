@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+       
+        <com.edmodo.cropper.CropImageView
+            xmlns:custom="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/img_profile_crop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:src="@drawable/profilelogo" />
+            <Button
+                android:id="@+id/btn_profile_crop_ok"
+                android:layout_marginBottom="@dimen/dp_10"
+                style="@style/btn_base"
+                android:layout_gravity="bottom|center"
+                android:text="@string/ok" />
+            
+    </FrameLayout>
+
+</LinearLayout>

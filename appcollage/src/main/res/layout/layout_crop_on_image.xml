@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.appunison.appcollage.utils.SoftKeyboardHandledLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+       
+        <com.edmodo.cropper.CropImageView
+            xmlns:custom="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/img_write_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:src="@drawable/profilelogo" />
+        <include 
+            layout="@layout/layout_sub_my_camera"/>
+        <TextView 
+            android:id="@+id/txt_crop_image_timer"
+            style="@style/txt_base"
+            android:background="@color/yellow"
+            android:layout_marginTop="@dimen/dp_45"
+            android:padding="@dimen/dp_8"
+            android:visibility="gone"
+            android:textSize="@dimen/sp_22"/>
+		<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="bottom"
+            android:orientation="vertical" >
+            <TextView 
+			    android:id="@+id/txt_mag_counter"
+			    android:layout_width="@dimen/dp_30"
+			    android:layout_height="wrap_content"
+			    android:text="@string/text55"
+			    android:textColor="@android:color/black"
+			    android:background="@android:color/white"
+			    android:paddingTop="@dimen/dp_8"
+			    android:gravity="center"
+			    android:layout_gravity="right"
+			    android:visibility="gone"
+			    android:paddingBottom="@dimen/dp_8"
+			    android:textSize="@dimen/sp_16"/>
+            <FrameLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+			<TextView 
+			    android:id="@+id/txt_write_text_on_tap"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:text="@string/tap_here_to_add_your_text"
+			    android:textColor="@android:color/black"
+			    android:background="@color/yellow"
+			    android:paddingTop="@dimen/dp_8"
+			    android:layout_marginBottom="@dimen/dp_25"
+			    android:gravity="center"
+			    android:paddingBottom="@dimen/dp_8"
+			    android:textSize="@dimen/sp_16"/>
+			<EditText 
+			    android:id="@+id/edt_write_text_on_image"
+			    style="@style/edit"
+			    android:layout_marginBottom="@dimen/dp_25"
+			    android:singleLine="false"
+			    android:hint="@string/enter_text_for_go_appcollage"
+			    android:maxLength="55"
+			    android:visibility="gone"
+			    />
+			</FrameLayout>
+            <Button
+                android:id="@+id/btn_write_text_default"
+                android:layout_marginTop="@dimen/dp_40"
+                android:layout_marginBottom="@dimen/dp_10"
+                style="@style/btn_base"
+                android:text="@string/default_text" />
+            
+        </LinearLayout>
+        
+    </FrameLayout>
+
+</com.appunison.appcollage.utils.SoftKeyboardHandledLinearLayout>

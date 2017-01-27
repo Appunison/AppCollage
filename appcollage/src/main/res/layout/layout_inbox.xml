@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_inbox"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/layout_action_bar" />
+
+    <TextView
+        android:id="@+id/txt_no_result_found"
+        style="@style/txt_base"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:text="@string/no_result_found"
+        android:textSize="@dimen/sp_14"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/list_inbox"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_inbox_sort"
+        android:layout_below="@id/include" />
+
+    <Button
+        android:id="@+id/btn_inbox_sort"
+        style="@style/btn_base"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/dp_10"
+        android:text="@string/sort_inbox"
+        android:visibility="gone" />
+
+</RelativeLayout>

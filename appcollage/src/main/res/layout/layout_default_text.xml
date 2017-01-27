@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_default_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    android:orientation="vertical" >
+    <include 
+        layout="@layout/layout_action_bar"/>
+    <TextView 
+        android:id="@+id/txt_set_default"
+        style="@style/txt_base"
+        android:textSize="@dimen/sp_14"
+        android:padding="@dimen/dp_10"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/set_default_text"/>
+    <TextView 
+        android:id="@+id/txt_counter1"
+        style="@style/txt_base"
+        android:textSize="@dimen/sp_14"
+        android:padding="@dimen/dp_10"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/dp_25"
+        android:text="@string/text55"/>
+    <EditText
+        android:id="@+id/edt_default_text_massage" 
+        style="@style/edit"
+        android:layout_marginLeft="@dimen/dp_25"
+        android:layout_marginRight="@dimen/dp_25"
+        android:singleLine="false"
+        android:layout_height="@dimen/dp_200"
+        android:textColor="@color/c909090"
+        android:maxLength="55"
+        android:gravity="center|top|left"
+        android:hint="@string/text"/>
+    <Button
+        android:id="@+id/btn_default_text_send" 
+        style="@style/btn_base"
+        android:text="@string/save"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>

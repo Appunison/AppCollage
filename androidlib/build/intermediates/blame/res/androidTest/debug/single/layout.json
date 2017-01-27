@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/priyank/AndroidStudioProjects/Synco/androidlib/build/intermediates/res/merged/androidTest/debug/layout/activity_main.xml",
+        "source": "/home/priyank/AndroidStudioProjects/Synco/androidlib/build/intermediates/bundles/debug/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/priyank/AndroidStudioProjects/Synco/androidlib/build/intermediates/res/merged/androidTest/debug/layout/layout_toast.xml",
+        "source": "/home/priyank/AndroidStudioProjects/Synco/androidlib/build/intermediates/bundles/debug/res/layout/layout_toast.xml"
+    }
+]

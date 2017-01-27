@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AAFFFFFF"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/layout_inbox_sort_date"
+            style="@style/layout_home"
+            android:layout_marginBottom="@dimen/dp_35"
+            android:layout_marginRight="@dimen/dp_35" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_46"
+                android:src="@drawable/date" />
+
+            <TextView
+                style="@style/txt_home"
+                android:text="@string/date" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_inbox_sort_groups"
+            style="@style/layout_home"
+            android:layout_marginBottom="@dimen/dp_35" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_46"
+                android:src="@drawable/groups" />
+
+            <TextView
+                style="@style/txt_home"
+                android:text="@string/groups" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/layout_inbox_sort_missed"
+            style="@style/layout_home"
+            android:layout_marginBottom="@dimen/dp_35"
+            android:layout_marginRight="@dimen/dp_35" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_46"
+                android:src="@drawable/missed" />
+
+            <TextView
+                style="@style/txt_home"
+                android:text="@string/missed" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_inbox_sort_participated"
+            style="@style/layout_home"
+            android:layout_marginBottom="@dimen/dp_35" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_46"
+                android:src="@drawable/participated" />
+
+            <TextView
+                style="@style/txt_home"
+                android:text="@string/participated" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/layout_inbox_sort_invitations"
+            style="@style/layout_home"
+            android:layout_marginBottom="@dimen/dp_35"
+            android:layout_marginRight="@dimen/dp_35" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_46"
+                android:src="@drawable/invitation" />
+
+            <TextView
+                style="@style/txt_home"
+                android:text="@string/invitations" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_inbox_sort_attachments"
+            style="@style/layout_home"
+            android:layout_marginBottom="@dimen/dp_35"
+            android:padding="@dimen/dp_8" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_46"
+                android:src="@drawable/attachment" />
+
+            <TextView
+                style="@style/txt_home"
+                android:text="@string/attachments" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

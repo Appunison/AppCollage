@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main$Generated" generated="true"><source path="/home/priyank/AndroidStudioProjects/Appcollage/androidcrop/src/main/res"/><source path="/home/priyank/AndroidStudioProjects/Appcollage/androidcrop/build/generated/res/rs/debug"/><source path="/home/priyank/AndroidStudioProjects/Appcollage/androidcrop/build/generated/res/resValues/debug"/></dataSet><dataSet config="debug$Generated" generated="true"><source path="/home/priyank/AndroidStudioProjects/Appcollage/androidcrop/src/debug/res"/></dataSet><dataSet config="main" generated-set="main$Generated"><source path="/home/priyank/AndroidStudioProjects/Appcollage/androidcrop/src/main/res"><file name="crop_image_view" path="/home/priyank/AndroidStudioProjects/Appcollage/androidcrop/src/main/res/layout/crop_image_view.xml" qualifiers="" type="layout"/><file path="/home/priyank/AndroidStudioProjects/Appcollage/androidcrop/src/main/res/values/colors.xml" qualifiers=""><color name="black_translucent">#50000000</color></file><file path="/home/priyank/AndroidStudioProjects/Appcollage/androidcrop/src/main/res/values/strings.xml" qualifiers=""><string name="app_name">Cropper</string></file><file path="/home/priyank/AndroidStudioProjects/Appcollage/androidcrop/src/main/res/values/attrs.xml" qualifiers=""><declare-styleable name="CropImageView">
+        <attr name="guidelines">
+            <enum name="on" value="2"/>
+            <enum name="onTouch" value="1"/>
+            <enum name="off" value="0"/>
+        </attr>
+        <attr format="boolean" name="fixAspectRatio"/>
+        <attr format="integer" name="aspectRatioX"/>
+        <attr format="integer" name="aspectRatioY"/>
+        <attr format="reference" name="imageResource"/>
+    </declare-styleable></file><file path="/home/priyank/AndroidStudioProjects/Appcollage/androidcrop/src/main/res/values/styles.xml" qualifiers=""><style name="AppTheme" parent="AppBaseTheme">
+        
+    </style><style name="AppBaseTheme" parent="android:Theme.Light">
+        
+    </style></file><file path="/home/priyank/AndroidStudioProjects/Appcollage/androidcrop/src/main/res/values-v14/styles.xml" qualifiers="v14"><style name="AppBaseTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        
+    </style></file><file path="/home/priyank/AndroidStudioProjects/Appcollage/androidcrop/src/main/res/values-v11/styles.xml" qualifiers="v11"><style name="AppBaseTheme" parent="android:Theme.Holo.Light">
+        
+    </style></file></source><source path="/home/priyank/AndroidStudioProjects/Appcollage/androidcrop/build/generated/res/rs/debug"/><source path="/home/priyank/AndroidStudioProjects/Appcollage/androidcrop/build/generated/res/resValues/debug"/></dataSet><dataSet config="debug" generated-set="debug$Generated"><source path="/home/priyank/AndroidStudioProjects/Appcollage/androidcrop/src/debug/res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="CropImageView"><attr name="guidelines">
+            <enum name="on" value="2"/>
+            <enum name="onTouch" value="1"/>
+            <enum name="off" value="0"/>
+        </attr><attr format="boolean" name="fixAspectRatio"/><attr format="integer" name="aspectRatioX"/><attr format="integer" name="aspectRatioY"/><attr format="reference" name="imageResource"/></declare-styleable></configuration></mergedItems></merger>

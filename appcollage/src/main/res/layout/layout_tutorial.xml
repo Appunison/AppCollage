@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/layout_action_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txt_top"
+                style="@style/txt_base"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_10"
+                android:singleLine="false"
+                android:gravity="center"
+                android:text="@string/appcollage_tutorial_top"
+                android:textSize="@dimen/sp_15" />
+
+         <TextView
+                android:id="@+id/txt_middle"
+                style="@style/txt_base"
+                android:background="@drawable/rounded_corner_with_white"
+                android:padding="@dimen/dp_5"
+                android:singleLine="false"
+                android:text="@string/appcollage_tutorial_middle"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/txt_bottom"
+                style="@style/txt_base"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="@string/appcollage_tutorial_bottom"
+                android:textStyle="bold"
+                android:textSize="@dimen/sp_16" />
+
+            <LinearLayout
+                android:id="@+id/layout_readTutorial"
+                android:layout_width="@dimen/dp_70"
+                android:layout_height="@dimen/dp_70"
+                android:padding="@dimen/dp_8"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:background="@drawable/rounded_corner_with_yellow"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/appcollage_logo" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

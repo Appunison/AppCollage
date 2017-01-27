@@ -1,0 +1,4 @@
+include ':facebookSDK'
+include ':androidcrop'
+include ':androidlib'
+include ':appcollage'

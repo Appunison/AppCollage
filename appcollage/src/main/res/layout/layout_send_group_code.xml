@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_appcollage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#88FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@drawable/dialog_bg"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/yellow"
+            android:gravity="center_horizontal"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10" 
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/dp_80"
+                android:layout_height="@dimen/dp_70"
+                android:layout_marginTop="@dimen/dp_15"
+                android:contentDescription="@null"
+                android:src="@drawable/appcollage_logo" />
+            <TextView
+                android:id="@+id/txt_initiate_appcollage_timer"
+                style="@style/txt_base"
+                android:layout_marginTop="@dimen/dp_15"
+                android:textStyle="bold"
+                android:textSize="@dimen/sp_30"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_5" >
+
+            <TextView
+                style="@style/txt_base"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:singleLine="false"
+                android:text="@string/enter_group_code"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_18" />
+            
+            <EditText
+                android:id="@+id/edt_group_code"
+                style="@style/edit"
+                android:hint="@string/enter_group_code"
+                android:maxLength="30" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/dp_5"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_group_code_cancel"
+                    style="@style/btn_base"
+                    android:layout_width="@dimen/dp_80"
+                    android:layout_marginRight="@dimen/dp_15"
+                    android:text="@string/cancel" />
+
+                <Button
+                    android:id="@+id/btn_group_code_ok"
+                    style="@style/btn_base"
+                    android:layout_width="@dimen/dp_80"
+                    android:text="@string/ok" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_new"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_action_bar" />
+
+    <TextView
+        android:id="@+id/txt_remove"
+        style="@style/txt_base"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/dp_8"
+        android:text="@string/from_group"
+        android:textColor="#8D8D8D"
+        android:textSize="@dimen/sp_18" />
+
+    <TextView
+        android:id="@+id/txt_remove_msg"
+        style="@style/txt_base"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/dp_50"
+        android:layout_marginTop="@dimen/dp_60"
+        android:singleLine="false"
+        android:textSize="@dimen/sp_16"
+        android:text="@string/remove_successful_mag" />
+
+    <Button
+        android:id="@+id/btn_remove_ok"
+        style="@style/btn_base"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/ok" />
+
+</LinearLayout>

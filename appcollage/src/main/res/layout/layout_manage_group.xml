@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_action_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.appunison.appcollage.utils.AutoResizeTextView
+                android:id="@+id/txt_manage_groupName"
+                style="@style/txt_base"
+                android:layout_gravity="center"
+                android:padding="@dimen/dp_5"
+                android:text="@string/text"
+                android:textSize="@dimen/sp_20" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_30"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dp_15"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:id="@+id/layout_manage_group_invite"
+                            style="@style/layout_home" >
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/dp_46"
+                                android:src="@drawable/invite" />
+
+                            <TextView
+                                style="@style/txt_home"
+                                android:text="@string/invite" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout_manage_group_gallery"
+                            style="@style/layout_home"
+                            android:layout_marginTop="@dimen/dp_15" >
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/dp_46"
+                                android:src="@drawable/gallery" />
+
+                            <TextView
+                                style="@style/txt_home"
+                                android:text="@string/gallery" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_manage_group_initiate"
+                        android:layout_width="@dimen/dp_187"
+                        android:layout_height="@dimen/dp_187"
+                        android:background="@drawable/rounded_corner_with_yellow"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            style="@style/txt_base"
+                            android:layout_marginTop="@dimen/dp_15"
+                            android:text="@string/initiate"
+                            android:textSize="@dimen/sp_30"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="@dimen/dp_128"
+                            android:layout_height="@dimen/dp_80"
+                            android:layout_marginBottom="@dimen/dp_40"
+                            android:layout_marginTop="@dimen/dp_5"
+                            android:src="@drawable/appcollage_logo1" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:id="@+id/layout_manage_group_member"
+                        style="@style/layout_home" >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_46"
+                            android:src="@drawable/member" />
+
+                        <TextView
+                            style="@style/txt_home"
+                            android:text="@string/member" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_manage_group_inbox"
+                        style="@style/layout_home"
+                        android:layout_marginLeft="@dimen/dp_15" >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_46"
+                            android:src="@drawable/inbox" />
+
+                        <TextView
+                            style="@style/txt_home"
+                            android:text="@string/inbox" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_manage_group_remove"
+                        style="@style/layout_home"
+                        android:layout_marginLeft="@dimen/dp_15" >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_46"
+                            android:src="@drawable/remove" />
+
+                        <TextView
+                            style="@style/txt_home"
+                            android:text="@string/remove" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

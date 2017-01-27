@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    >
+<ImageView
+    android:id="@+id/img_country_flag" 
+    android:layout_height="@dimen/dp_32"
+    android:layout_width="@dimen/dp_32"
+    android:contentDescription="@null"
+    android:src="@drawable/ic_launcher"
+    android:padding="@dimen/dp_2"
+    />
+<ImageView
+    android:layout_height="@dimen/dp_25"
+    android:layout_width="@dimen/dp_25"
+    android:contentDescription="@null"
+    android:src="@drawable/ic_action_expand_black"
+    />
+    </LinearLayout>

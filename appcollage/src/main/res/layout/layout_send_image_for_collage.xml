@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AAFFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@drawable/dialog_bg"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/yellow"
+            android:gravity="center_horizontal"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10" 
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/dp_80"
+                android:layout_height="@dimen/dp_70"
+                android:layout_marginTop="@dimen/dp_15"
+                android:contentDescription="@null"
+                android:src="@drawable/appcollage_logo" />
+            <TextView
+                android:id="@+id/txt_send_Image_timer" 
+                style="@style/txt_base"
+                android:layout_marginTop="@dimen/dp_15"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:textSize="@dimen/sp_30"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_10" >
+
+            <TextView
+                android:id="@+id/txt_send_Image"
+                style="@style/txt_base"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:singleLine="false"
+                android:text="@string/send_msg_collage"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_14" />
+            <TextView
+                android:id="@+id/txt_send_Image_2"
+                style="@style/txt_base"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:singleLine="false"
+                android:text="@string/send_msg_collage1"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_14" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_send_Image_no"
+                    style="@style/btn_base"
+                    android:layout_width="@dimen/dp_80"
+                    android:layout_marginRight="@dimen/dp_15"
+                    android:text="@string/not_now" />
+
+                <Button
+                    android:id="@+id/btn_send_Image_appcollage"
+                    style="@style/btn_base"
+                    android:layout_width="@dimen/dp_80"
+                    android:text="@string/appcollage" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

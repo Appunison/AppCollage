@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_edit_group_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_action_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/txt_base"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:padding="@dimen/dp_10"
+                android:text="@string/edit_group_msg"
+                android:textSize="@dimen/sp_13" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:background="#838383" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_250"
+                android:orientation="vertical" >
+
+                <ListView
+                    android:id="@+id/list_edit_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/white"
+                    android:divider="@null"
+                    android:padding="@dimen/dp_5" />
+
+                <TextView
+                    android:id="@+id/txt_edit_group_no_result_found"
+                    style="@style/txt_base"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dp_250"
+                    android:background="@android:color/white"
+                    android:gravity="center"
+                    android:text="@string/no_result_found"
+                    android:textSize="@dimen/sp_14"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:background="#838383" />
+
+            <EditText
+                android:id="@+id/edt_edit_group"
+                style="@style/edit"
+                android:layout_marginBottom="@dimen/dp_15"
+                android:layout_marginLeft="@dimen/dp_25"
+                android:layout_marginRight="@dimen/dp_25"
+                android:layout_marginTop="@dimen/dp_25"
+                android:hint="@string/enter_new_group_name_here"
+                android:maxLength="30" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_edit_group_cancel"
+                    style="@style/btn_base"
+                    android:layout_marginRight="@dimen/dp_15"
+                    android:text="@string/cancel" />
+
+                <Button
+                    android:id="@+id/btn_edit_group_change"
+                    style="@style/btn_base"
+                    android:text="@string/change" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

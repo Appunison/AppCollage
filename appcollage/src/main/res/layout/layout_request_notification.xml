@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_66"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_1"
+        android:orientation="horizontal"
+        android:background="@drawable/outline_notification_header">
+        <TextView
+                android:id="@+id/txt_home_notification_counter" 
+                android:layout_width="@dimen/dp_36"
+                android:layout_height="@dimen/dp_36"
+                android:text="@string/five"
+                android:layout_margin="@dimen/dp_2"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:background="@drawable/cir"
+                android:textSize="@dimen/sp_16" />
+        <View 
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+        <ImageView 
+            android:id="@+id/img_request_noti_close"
+            android:layout_width="@dimen/dp_36"
+            android:layout_height="@dimen/dp_36"
+            android:layout_margin="@dimen/dp_2"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_action_next_item"/>
+    </LinearLayout>
+    <ListView 
+        android:id="@+id/list_notification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dp_1"
+        android:paddingRight="@dimen/dp_1"
+        android:paddingBottom="@dimen/dp_20"
+        android:layout_marginLeft="@dimen/dp_35"
+        android:layout_marginRight="@dimen/dp_35"
+        android:layout_marginBottom="@dimen/dp_15"
+        android:background="@drawable/outline_notification_bottom"/>
+    <TextView
+                android:id="@+id/txt_home_noti_no_result_found" 
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_250"
+                android:text="@string/no_result_found"
+                android:gravity="center"
+                android:visibility="gone"
+                android:paddingLeft="@dimen/dp_1"
+        		android:paddingRight="@dimen/dp_1"
+        		android:layout_marginLeft="@dimen/dp_35"
+        		android:layout_marginRight="@dimen/dp_35"
+        		android:layout_marginBottom="@dimen/dp_15"
+        		android:background="@drawable/outline_notification_bottom"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/sp_16" />
+
+</LinearLayout>

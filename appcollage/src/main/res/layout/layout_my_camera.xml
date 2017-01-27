@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_mycamera"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        
+        <ImageView
+            android:id="@+id/img_mycamera_collage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:src="@drawable/profilelogo" />
+        <include 
+            layout="@layout/layout_sub_my_camera"/>
+        <TextView 
+            android:id="@+id/txt_mycamera_timer"
+            style="@style/txt_base"
+            android:background="@color/yellow"
+            android:layout_marginTop="@dimen/dp_45"
+            android:padding="@dimen/dp_8"
+            android:visibility="gone"
+            android:textSize="@dimen/sp_22"/>
+		<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/dp_40"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_mycamera_retake"
+                style="@style/btn_base"
+                android:layout_marginRight="@dimen/dp_35"
+                android:text="@string/retake" />
+
+            <Button
+                android:id="@+id/btn_mycamera_ok"
+                style="@style/btn_base"
+                android:text="@string/ok" />
+            
+        </LinearLayout>
+        
+    </FrameLayout>
+
+</LinearLayout>

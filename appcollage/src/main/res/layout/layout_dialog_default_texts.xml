@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#CCFFFFFF"
+    android:orientation="vertical" >
+    <LinearLayout
+            android:id="@+id/layout_default_text_invite"
+            android:padding="@dimen/dp_5"
+            android:layout_marginBottom="@dimen/dp_20"
+            style="@style/layout_home">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_46"
+                android:contentDescription="@null"
+                android:src="@drawable/invitation" />
+
+            <TextView
+                style="@style/txt_home"
+                android:text="@string/default_text_invite"
+                android:gravity="center"
+                android:singleLine="false" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout_default_text_go_appcollage"
+            android:padding="@dimen/dp_5"
+            android:layout_marginBottom="@dimen/dp_20"
+            style="@style/layout_home">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_46"
+                android:contentDescription="@null"
+                android:src="@drawable/defaulttextgosynci" />
+
+            <TextView
+                style="@style/txt_home"
+                android:text="@string/default_text_go_appcollage"
+                android:gravity="center"
+                android:singleLine="false" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout_default_text_response"
+            android:padding="@dimen/dp_5"
+            style="@style/layout_home">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_46"
+                android:contentDescription="@null"
+                android:src="@drawable/defaulttextresponse" />
+
+            <TextView
+                style="@style/txt_home"
+                android:text="@string/default_text_response"
+                android:gravity="center"
+                android:singleLine="false" />
+        </LinearLayout>
+    
+
+</LinearLayout>

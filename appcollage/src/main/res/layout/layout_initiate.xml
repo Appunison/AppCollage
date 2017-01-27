@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_initiate"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/layout_action_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_25"
+            android:layout_marginRight="@dimen/dp_25"
+            
+            android:orientation="vertical" >
+
+            <Spinner
+                android:id="@+id/spinner_initiate_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_25"
+                android:layout_marginTop="@dimen/dp_45"
+                android:entries="@array/select_group"
+                android:spinnerMode="dropdown" />
+
+            <EditText
+                android:id="@+id/edt_initiate_msg"
+                style="@style/edit"
+                android:layout_height="@dimen/dp_180"
+                android:gravity="top|center"
+                android:hint="@string/initiate_msg"
+                android:maxLength="155"
+                android:singleLine="false" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/txt_base"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.0"
+                    android:text="@string/tap_initiate_msg"
+                    android:textColor="@color/c8b8b8b"
+                    android:textSize="@dimen/sp_12" />
+
+                <TextView
+                    android:id="@+id/txt_counter"
+                    style="@style/txt_base"
+                    android:text="@string/text155"
+                    android:textColor="@color/c8b8b8b"
+                    android:textSize="@dimen/sp_12" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_initiate"
+                style="@style/btn_base"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/dp_10"
+                android:text="@string/initiate" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

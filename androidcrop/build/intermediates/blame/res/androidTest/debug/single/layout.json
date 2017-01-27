@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/priyank/AndroidStudioProjects/Appcollage/androidcrop/build/intermediates/res/merged/androidTest/debug/layout/crop_image_view.xml",
+        "source": "/home/priyank/AndroidStudioProjects/Appcollage/androidcrop/build/intermediates/bundles/debug/res/layout/crop_image_view.xml"
+    },
+    {
+        "merged": "/home/priyank/AndroidStudioProjects/Synco/androidcrop/build/intermediates/res/merged/androidTest/debug/layout/crop_image_view.xml",
+        "source": "/home/priyank/AndroidStudioProjects/Synco/androidcrop/build/intermediates/bundles/debug/res/layout/crop_image_view.xml"
+    }
+]

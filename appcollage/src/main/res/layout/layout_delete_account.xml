@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_action_bar" />
+
+    <TextView
+        style="@style/txt_base"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_30"
+        android:gravity="center"
+        android:singleLine="false"
+        android:text="@string/delete_account_msg"
+        android:textSize="@dimen/sp_16" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_25"
+        android:layout_marginTop="@dimen/dp_10"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/txt_base"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="@string/enter_password"
+            android:textSize="@dimen/sp_15" />
+
+        <EditText
+            android:id="@+id/edt_delete_account_password"
+            style="@style/edit"
+            android:layout_marginBottom="@dimen/dp_1"
+            android:hint="@string/password_hint"
+            android:inputType="textPassword" />
+
+        <TextView
+            style="@style/txt_base"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="@string/re_enter_password"
+            android:textSize="@dimen/sp_15" />
+
+        <EditText
+            android:id="@+id/edt_delete_account_re_password"
+            style="@style/edit"
+            android:layout_marginBottom="@dimen/dp_1"
+            android:hint="@string/password_hint"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/btn_delete_account"
+            style="@style/btn_base"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_25"
+            android:text="@string/delete" />
+    </LinearLayout>
+
+</LinearLayout>
